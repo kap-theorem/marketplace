@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController implements HealthApi {
 
+
     @Override
     public ResponseEntity<String> _health() {
-        return ResponseEntity.ok("Application is healthy");
+        return HealthApi.super._health();
     }
 }
