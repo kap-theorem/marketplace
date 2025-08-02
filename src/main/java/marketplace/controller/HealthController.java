@@ -1,15 +1,15 @@
 package marketplace.controller;
 
+import marketplace.api.HealthApi;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HealthController {
+public class HealthController implements HealthApi {
 
-  @GetMapping("/health")
-  public ResponseEntity<String> health() {
-    return ResponseEntity.ok("OK");
-  }
 
+    @Override
+    public ResponseEntity<String> _health() {
+        return HealthApi.super._health();
+    }
 }

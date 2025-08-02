@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: Marketplace API
+  description: API for marketplace application
+  version: 1.0.0
+  contact:
+    name: Marketplace Team
+    email: team@marketplace.com
+
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+
+paths:
+  /health:
+    get:
+      tags:
+        - Health
+      summary: Health check endpoint
+      description: Check if the application is running and healthy
+      operationId: health
+      responses:
+        '200':
+          description: Application is healthy
+          content:
+            text/plain:
+              schema:
+                type: string
+                enum: ["OK"]
+        '500':
+          description: Interval server error
+          content:
+            text/plain:
+              schema:
+                type: string
+                enum: ["Internal Server error"]
