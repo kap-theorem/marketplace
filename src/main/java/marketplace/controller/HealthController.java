@@ -10,6 +10,6 @@ public class HealthController implements HealthApi {
 
     @Override
     public ResponseEntity<String> _health() {
-        return HealthApi.super._health();
+        return ResponseEntity.ok("Okayyyyyyy");
     }
 }
