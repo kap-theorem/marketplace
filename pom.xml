@@ -108,8 +108,9 @@
                 <useSpringBoot3>true</useSpringBoot3>
                 <useTags>true</useTags>
                 <dateLibrary>java8</dateLibrary>
-                <skipDefaultInterface>true</skipDefaultInterface>
+                <skipDefaultInterface>false</skipDefaultInterface>
                 <oas3>true</oas3>
+                <prefixParameterInterfaces>false</prefixParameterInterfaces>
                 <additionalModelTypeAnnotations>@com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)</additionalModelTypeAnnotations>
               </configOptions>
             </configuration>
