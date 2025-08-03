@@ -77,8 +77,8 @@
                 <delegatePattern>true</delegatePattern>
                 <interfaceOnly>true</interfaceOnly>
                 <useSpringBoot3>true</useSpringBoot3>
-                <useTags>true</useTags>
-                <dateLibrary>java8</dateLibrary>
+<!--                <useTags>true</useTags>-->
+                <dateLibrary>java17</dateLibrary>
                 <skipDefaultInterface>false</skipDefaultInterface>
                 <oas3>true</oas3>
                 <prefixParameterInterfaces>false</prefixParameterInterfaces>
